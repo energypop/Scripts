@@ -1,6 +1,8 @@
 ﻿# Installation of omp
 
-winget install JanDeDobbeleer.OhMyPosh -s winget 
+if (Get-ChildItem -Path "C:\Users\user\AppData\Local\Programs\oh-my-posh\" -Recurse | Measure-Object == 0) { # Checking if it's empty 
+    winget install JanDeDobbeleer.OhMyPosh -s winget 
+}
 
 if ($?){ # $? is a default variable and it will be used to check if the command has run sucessfully 
     $env:Path += ";C:\Users\user\AppData\Local\Programs\oh-my-posh\bin"
