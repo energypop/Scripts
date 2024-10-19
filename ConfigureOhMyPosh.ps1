@@ -16,7 +16,6 @@ else {
     Start-Process scoop -ArgumentList "install git" -Wait 
     Start-Process scoop -ArgumentList "scoop bucket add extras" -Wait
     Start-Process scoop -ArgumentList "scoop install https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/oh-my-posh.json" -Wait  
-    continue
 }
 
 # Oh my posh is already installed using winget or scoop 
